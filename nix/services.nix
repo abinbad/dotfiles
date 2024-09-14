@@ -14,4 +14,16 @@
     autoRepeatDelay = 200;
     autoRepeatInterval = 35;
   };
+
+  services.timesyncd = {
+    enable = true;
+    servers = [
+      "time.cloudflare.com"
+      "time.google.com"
+    ];
+    fallbackServers = [
+      "0.nixos.pool.ntp.org"
+      "1.nixos.pool.ntp.org"
+    ];
+  };
 }
