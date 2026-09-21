@@ -8,9 +8,6 @@
     enable = true;
     userName = "abin:";
     userEmail = "abin@abin.com";
-    extraConfig = {
-      init.defaultBrnch = "main";
-    };
   };
 
   home.stateVersion = "26.05";
