@@ -1,9 +1,11 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.username = "abin";
   home.homeDirectory = "/home/abin";
-  
+
   programs.git = {
     enable = true;
     userName = "abin:";
@@ -15,6 +17,7 @@
     enable = true;
     shellAliases = {
       btw = "echo hashtag fried";
+      z = "zigfetch";
     };
   };
 }
