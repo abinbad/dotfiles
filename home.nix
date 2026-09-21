@@ -18,6 +18,8 @@
     shellAliases = {
       btw = "echo hashtag fried";
       z = "zigfetch";
+      la = "ls -a";
+      q = "exit";
     };
   };
 }
