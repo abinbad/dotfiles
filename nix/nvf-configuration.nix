@@ -23,8 +23,8 @@
         tabstop = 4;
         softtabstop = 4;
 
-        smartindent = true;
-        autoindent = true;
+        smartindent = false;
+        autoindent = false;
 
         cursorline = true;
         signcolumn = "yes";
@@ -62,17 +62,7 @@
       # Completion
       # ─────────────────────────────────────────────
 
-      autocomplete.nvim-cmp = {
-        enable = true;
-
-        setupOpts = {
-          mapping = {
-            "<CR>" = "confirm";
-            "<Tab>" = "snippet_forward";
-            "<S-Tab>" = "snippet_backward";
-          };
-        };
-      };
+      autocomplete.nvim-cmp.enable = true;
 
       # ─────────────────────────────────────────────
       # LSP
