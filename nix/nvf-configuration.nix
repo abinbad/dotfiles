@@ -1,6 +1,8 @@
-{ pkgs, lib, ... }:
-
 {
+  pkgs,
+  lib,
+  ...
+}: {
   programs.nvf = {
     enable = true;
 
@@ -60,8 +62,16 @@
       # Completion
       # ─────────────────────────────────────────────
 
-      autocomplete = {
-        nvim-cmp.enable = true;
+      autocomplete.nvim-cmp = {
+        enable = true;
+
+        setupOpts = {
+          mapping = {
+            "<CR>" = "confirm";
+            "<Tab>" = "snippet_forward";
+            "<S-Tab>" = "snippet_backward";
+          };
+        };
       };
 
       # ─────────────────────────────────────────────
@@ -89,12 +99,12 @@
           enable = true;
 
           # Eclipse JDT Language Server
-          servers = [ "jdt-language-server" ];
+          servers = ["jdt-language-server"];
         };
 
         format = {
           enable = true;
-          type = [ "astyle" ];
+          type = ["astyle"];
         };
 
         treesitter.enable = true;
@@ -174,8 +184,6 @@
 
       ui = {
         borders.enable = true;
-
-        noice.enable = true;
 
         colorizer.enable = true;
 
