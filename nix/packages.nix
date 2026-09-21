@@ -1,6 +1,9 @@
-{ config, lib, pkgs, ... }:
 {
-
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   programs.firefox.enable = true;
   services.openssh.enable = true;
   services.displayManager.ly.enable = true;
@@ -10,6 +13,6 @@
     wget
     git
     ghostty
+    zigfetch
   ];
-
 }
