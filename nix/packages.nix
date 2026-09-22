@@ -19,6 +19,6 @@
     ghostty
     zigfetch
     android-studio # this is for robotics
-    #jdk17 # this is for robotics
+    jdk17 # this is for robotics
   ];
 }
