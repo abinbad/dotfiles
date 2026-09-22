@@ -18,7 +18,7 @@
 
   users.users.abin = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "adbusers" "kvn" #these last 2 are for android studio];
     packages = with pkgs; [
       tree
     ];
