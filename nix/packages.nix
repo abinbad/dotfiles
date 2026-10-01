@@ -20,6 +20,5 @@
     android-studio # this is for robotics
     android-tools # this is for robotics
     jdk17 # this is for robotics
-    bambu-studio
   ];
 }
